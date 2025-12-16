@@ -1,0 +1,9 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Runs",
+    "pages/RunDetail",
+    "pages/ImportOrSync",
+    "pages/Settings"
+  ]
+}
