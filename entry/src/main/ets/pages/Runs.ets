@@ -2,12 +2,16 @@ import router from '@ohos.router';
 
 @Entry
 @Component
-struct Runs {
+struct Index {
   build() {
-    Column() {
-      Button('返回')
+    Column({ space: 16 }) {
+      Text('这是新的 Index 页面')
+        .fontSize(22)
+        .fontWeight(FontWeight.Bold)
+
+      Button('去 Runs 页面')
         .onClick(() => {
-          router.back();
+          router.pushUrl({ url: 'pages/Runs' })
         })
     }
     .width('100%')
